@@ -13,31 +13,36 @@ requests.packages.urllib3.disable_warnings()
 # 个人中心获取orderno与secret
 from requests.exceptions import ProxyError
 
-orderno = "DT20210217143226h373azAb"  # 我的
-# orderno = "DT20210724165937hjNoKaTV"
-secret = "14e46dee80df5cca4b80b39549a2a7df"  # 我的
-# secret = "dd269a72fc9e6accf51e016b4d9ff70a"
+auth = "1"
 
-ip = "dynamic.xiongmaodaili.com"
-# 按量订单端口
-port = "8088"
-# 按并发订单端口
-# port = "8089"
 
-ip_port = ip + ":" + port
+# proxy = {"https": "http://" + ip_port}
 
-timestamp = str(int(time.time()))  # 计算时间戳
-txt = ""
-txt = "orderno=" + orderno + "," + "secret=" + secret + "," + "timestamp=" + timestamp
 
-txt = txt.encode()
+def get_proxy(api):
+    json_data = requests.get(api).json()
+    result = []
+    for obj in json_data['obj']:
+        username = obj['account']
+        password = obj['password']
+        ip = obj['ip']
+        port = obj['port']
+        result.append({"https": "http://" + username + ':' + password + '@' + ip + ":" + port, 'lock': 0})
+    return result
 
-md5_string = hashlib.md5(txt).hexdigest()  # 计算sign
-sign = md5_string.upper()  # 转换成大写
 
-auth = "sign=" + sign + "&" + "orderno=" + orderno + "&" + "timestamp=" + timestamp + "&change=true"
+apilist = [
+    'http://route.xiongmaodaili.com/xiongmao-web/cx/cxip?secret=dd269a72fc9e6accf51e016b4d9ff70a&orderNo=CX20210731140103IiofXuG6&isTxt=0&cityId=0&proxyType=1',
+    'http://route.xiongmaodaili.com/xiongmao-web/cx/cxip?secret=dd269a72fc9e6accf51e016b4d9ff70a&orderNo=CX20210731135821eJrJS031&isTxt=0&cityId=0&proxyType=1',
+    'http://route.xiongmaodaili.com/xiongmao-web/cx/cxip?secret=dd269a72fc9e6accf51e016b4d9ff70a&orderNo=CX202107311346135J4kQn2g&isTxt=0&cityId=0&proxyType=1',
 
-proxy = {"https": "http://" + ip_port}
+]
+proxies = []
+
+for api in apilist:
+    result = get_proxy(api)
+    for i in result:
+        proxies.append(i)
 
 open_proxy = True
 
@@ -46,7 +51,7 @@ open_proxy = True
 
 
 class Dopaper:
-    def __init__(self, userid, majorid, placeid, paperid, classname, likes):
+    def __init__(self, userid, majorid, placeid, paperid, classname, likes, proxy):
         """
         初始化
         :param userid: 用户id
@@ -66,6 +71,7 @@ class Dopaper:
         # topicid_list 还没获取
         self.dataid_list = []
         self.offical_id = ''
+        self.proxy = proxy
         try:
             print(requests.get(url='http://' + server + '/status',
                                params={'classname': classname, 'userid': userid, 'status': 1}).json())
@@ -121,7 +127,7 @@ class Dopaper:
             }
             try:
                 if open_proxy:
-                    return requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
+                    return requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
                                          allow_redirects=False).json()
 
                 return requests.post(url=url, data=data, headers=headers).json()
@@ -170,7 +176,7 @@ class Dopaper:
             }
             try:
                 if open_proxy:
-                    respon = requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
+                    respon = requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
                                            allow_redirects=False)
                     if respon:
                         json_data = respon.json()
@@ -251,7 +257,7 @@ class Dopaper:
                     "txt_placeid": self.placeid, "txt_paperid": self.paperid,
                     "txt_officialid": self.offical_id, "txt_is_finsish": 1}
             if open_proxy:
-                respon = requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
+                respon = requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
                                        allow_redirects=False)
             else:
                 respon = requests.post(url=url, data=data, headers=headers)
@@ -298,8 +304,14 @@ def startexam(data_list_object):
     :return:
     """
     # 获取考试信息
-
+    temp_proxiy = {}
     try:
+        for temp in proxies:
+            if temp['lock'] == 0:
+                temp['lock'] = 1
+                temp_proxiy = temp
+                break
+
         userid = data_list_object['userid']
         classname = data_list_object['classname']
         headers = {
@@ -321,7 +333,7 @@ def startexam(data_list_object):
                                           headers=headers,
                                           data={
                                               'txt_userid': userid,
-                                          }, proxies=proxy, verify=False, allow_redirects=False)
+                                          }, proxies=temp_proxiy, verify=False, allow_redirects=False)
             except:
                 return startexam(data_list_object)
         else:
@@ -340,12 +352,7 @@ def startexam(data_list_object):
                 majorid = item['majorid']
                 placeid = item['placeid']
                 classname = item['name'].replace('员', '')[:1]
-                # if item['name'].replace('员', '')[:1] in classname:
-                #     majorid = item['majorid']
-                #     placeid = item['placeid']
-                #     break
 
-                # paperid = ''
                 if open_proxy:
                     try:
                         paper_data = requests.post('https://api.ccenpx.com.cn/official/official_home',
@@ -355,7 +362,7 @@ def startexam(data_list_object):
                                                        'txt_majorid': majorid,
                                                        'txt_placeid': placeid,
                                                        'txt_paperid': ''
-                                                   }, proxies=proxy, verify=False, allow_redirects=False)
+                                                   }, proxies=temp_proxiy, verify=False, allow_redirects=False)
                     except:
                         return startexam(data_list_object)
 
@@ -374,7 +381,7 @@ def startexam(data_list_object):
                     placeid = paper_data.json()['data']['placeid']
                     classname = paper_data.json()['data']['major']
 
-                person = Dopaper(userid, majorid, placeid, paperid, classname, 90)
+                person = Dopaper(userid, majorid, placeid, paperid, classname, 90, temp_proxiy)
 
                 for data_id in person.dataid_list:
                     # time.sleep(1)
@@ -401,7 +408,7 @@ def startexam(data_list_object):
         return ''
 
 
-pool = threadpool.ThreadPool(1)
+pool = threadpool.ThreadPool(len(proxies))
 
 
 def get_ids(data_list):
