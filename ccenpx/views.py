@@ -16,8 +16,10 @@ class Exam:
         if len(classname) > 2:
             classname = classname[:1]
         self.classname = classname
-
-        self.banks = Question_bank.objects.filter(classname__contains=classname)
+        if classname == '通用':
+            self.banks = Question_bank.objects.all()
+        else:
+            self.banks = Question_bank.objects.filter(classname__contains=classname)
         # self.banks = Question_bank.objects.all()
         self.likes = int(likes)
 

@@ -67,7 +67,7 @@ class Dopaper:
         try:
             print(requests.get(url='http://' + server + '/status',
                                params={'classname': classname, 'userid': userid, 'status': 1}).json())
-            self.check_start()               
+            self.check_start()
             try:
                 dataids = self.get_question('0')['data']['total']
             except:
@@ -80,6 +80,7 @@ class Dopaper:
             self.__init__(userid, majorid, placeid, paperid, classname, likes)
 
         ##############
+
     def check_start(self):
         headers = {
             "Authorization": auth,
@@ -93,15 +94,14 @@ class Dopaper:
         }
 
         data = {
-        'txt_userid': self.userid,
-        'txt_majorid': self.majorid,
-        'txt_placeid': self.placeid
+            'txt_userid': self.userid,
+            'txt_majorid': self.majorid,
+            'txt_placeid': self.placeid
         }
-        
+
         response = requests.post('https://api.ccenpx.com.cn/official/official_check', headers=headers, data=data)
         if response:
             print(response.text)
-
 
     def answer_save(self, answer, topicid, dataid):
         """

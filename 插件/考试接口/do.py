@@ -13,7 +13,7 @@ requests.packages.urllib3.disable_warnings()
 # 个人中心获取orderno与secret
 from requests.exceptions import ProxyError
 
-orderno = "DT20210217143226h373azAb"         # 我的
+orderno = "DT20210217143226h373azAb"  # 我的
 # orderno = "DT20210724165937hjNoKaTV"
 secret = "14e46dee80df5cca4b80b39549a2a7df"  # 我的
 # secret = "dd269a72fc9e6accf51e016b4d9ff70a"
@@ -171,9 +171,8 @@ class Dopaper:
             try:
                 if open_proxy:
                     respon = requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
-                                              allow_redirects=False)
+                                           allow_redirects=False)
                     if respon:
-                    
                         json_data = respon.json()
                 else:
                     json_data = requests.post(url=url, data=data, headers=headers).json()
@@ -299,7 +298,7 @@ def startexam(data_list_object):
     :return:
     """
     # 获取考试信息
-    
+
     try:
         userid = data_list_object['userid']
         classname = data_list_object['classname']
@@ -331,6 +330,7 @@ def startexam(data_list_object):
                                       data={
                                           'txt_userid': userid,
                                       })
+
         majorid = ''
         placeid = ''
         if exam_data:
@@ -345,7 +345,7 @@ def startexam(data_list_object):
                 #     placeid = item['placeid']
                 #     break
 
-            # paperid = ''
+                # paperid = ''
                 if open_proxy:
                     try:
                         paper_data = requests.post('https://api.ccenpx.com.cn/official/official_home',
@@ -372,7 +372,7 @@ def startexam(data_list_object):
                     paperid = paper_data.json()['data']['paperid']
                     majorid = paper_data.json()['data']['majorid']
                     placeid = paper_data.json()['data']['placeid']
-                    classname =  paper_data.json()['data']['major']
+                    classname = paper_data.json()['data']['major']
 
                 person = Dopaper(userid, majorid, placeid, paperid, classname, 90)
 
@@ -431,6 +431,37 @@ def text_post():
     # get_age = my_json.get("age")
     get_ids(my_json)
     return jsonify(msg='ok', len=len(my_json))  # 返回JSON格式
+
+
+@app.route("/do", methods=["POST"])
+def do_paper():
+    my_json = request.get_json()
+    userid = my_json['userid']
+    majorid = my_json['majorid']
+    placeid = my_json['placeid']
+    paperid = my_json['paperid']
+    classname = my_json['classname']
+    person = Dopaper(userid, majorid, placeid, paperid, classname, 90)
+    try:
+        for data_id in person.dataid_list:
+            json_question = person.get_question(data_id)
+            topic_id = json_question['data']['topic_id']  # 获取topicid
+            content = json_question['data']['content']  # 获取题目正文
+            print(content)
+
+            options = person.get_answer(content)  # 查找答案
+            if options:
+
+                result_json = person.answer_save(options, topic_id, data_id)
+                print(options)
+            else:
+                result_json = person.answer_save('A', topic_id, data_id)
+                print('放空')
+        person.submit()
+        return ''
+    except:
+        print('半自动账号有错误')
+        return ''
 
 
 if __name__ == '__main__':

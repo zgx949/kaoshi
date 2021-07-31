@@ -60,7 +60,7 @@ class Dopaper:
         self.dataid_list = []
         self.offical_id = ''
         print(requests.get(url='http://127.0.0.1:8000/status',
-                                   params={'classname': classname, 'userid': userid, 'status': 1}).json())
+                           params={'classname': classname, 'userid': userid, 'status': 1}).json())
         dataids = self.get_question('0')['data']['total']
         for dataid in dataids:
             for item in dataids[dataid]['topic']:
@@ -189,13 +189,16 @@ class Dopaper:
         if respon:
             json_data = respon.json()
             if json_data['code'] == 0:
-                print(requests.get(url='http://127.0.0.1:8000/status',params={'classname': self.classname, 'userid': self.userid, 'status': 2}).json())
+                print(requests.get(url='http://127.0.0.1:8000/status',
+                                   params={'classname': self.classname, 'userid': self.userid, 'status': 2}).json())
                 return "已经通过"
             else:
-                print(requests.get(url='http://127.0.0.1:8000/status', params={'classname': self.classname, 'userid': self.userid, 'status': -1}).json())
+                print(requests.get(url='http://127.0.0.1:8000/status',
+                                   params={'classname': self.classname, 'userid': self.userid, 'status': -1}).json())
                 return "挂科"
         else:
-            print(requests.get(url='http://127.0.0.1:8000/status',params={'classname': self.classname, 'userid': self.userid, 'status': -1}).json())
+            print(requests.get(url='http://127.0.0.1:8000/status',
+                               params={'classname': self.classname, 'userid': self.userid, 'status': -1}).json())
             return "异常"
 
 
@@ -275,7 +278,7 @@ def get_ids(data_list):
     requests = threadpool.makeRequests(startexam, data_list)
     [pool.putRequest(req) for req in requests]
     pool.wait()
-    
+
     # start_do = threadpool.makeRequests(startexam, data_list)
     # [pool.putRequest(req) for req in start_do]
     # pool.wait()
