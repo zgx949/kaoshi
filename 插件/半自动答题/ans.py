@@ -5,7 +5,7 @@ import time
 import requests
 
 print("正在读取账号...")
-f = open(r'C:\Users\Administrator\Desktop\2.txt', 'r', encoding="utf-8")
+f = open('C:\\Users\\Administrator\\Desktop\\' + input('请输入桌面上的文件名：'), 'r', encoding="utf-8")
 idcards = f.read().splitlines()
 print('读取成功！\n正在初始化图片识别模块...')
 access_token = requests.get(
@@ -151,10 +151,10 @@ def ocr_yzm(img_base64):
 
 
 if __name__ == "__main__":
-
+    driver = webdriver.Firefox()
     for idcard in idcards:
         # input('按回车启动浏览器')
-        driver = webdriver.Firefox()
+
         driver.get('https://www.ccenpx.com.cn/platform/login/p/type/1')
 
         driver.find_element_by_xpath('/html/body/div[4]/div[1]/form/div/div[1]/div[2]/input').send_keys(idcard)
@@ -190,6 +190,14 @@ if __name__ == "__main__":
 
             print(
                 classname + '\nuserid:\n' + userid + '\n' + 'majorid：\n' + majorid + 'placeid:\n' + placeid + 'paperid:\n' + paperid)
+            if majorid == '':
+                driver.get('https://www.ccenpx.com.cn/student/home')
+                try:
+                    driver.execute_async_script("loginOut();")
+                    break
+                except Exception as e:
+                    print(e)
+                continue
             # headers = {
             #     'Content-Type': 'application/json',
             # }
@@ -228,7 +236,12 @@ if __name__ == "__main__":
 
         except:
             print('请先打开考试承诺页面！')
-            driver.close()
+            driver.get('https://www.ccenpx.com.cn/student/home')
+            try:
+                driver.execute_async_script("loginOut();")
+                break
+            except Exception as e:
+                print(e)
 
             continue
         json_data = get_answer(userid, majorid, placeid, paperid, '0')
@@ -245,8 +258,18 @@ if __name__ == "__main__":
                 driver.find_element_by_css_selector('.layui-layer-btn0').click()
             except:
                 pass
-            driver.close()
+            driver.get('https://www.ccenpx.com.cn/student/home')
+            try:
+                driver.execute_async_script("loginOut();")
+                break
+            except Exception as e:
+                print(e)
             exit()
         else:
             continue
-            driver.close()
+            driver.get('https://www.ccenpx.com.cn/student/home')
+            try:
+                driver.execute_async_script("loginOut();")
+                break
+            except Exception as e:
+                print(e)

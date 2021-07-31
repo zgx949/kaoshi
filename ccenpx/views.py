@@ -26,7 +26,7 @@ class Exam:
     def get_ans(self, question):
         for bank in self.banks:
             if fuzz.ratio(bank.question, question) > self.likes:
-                return {'question': bank.question, 'options': bank.option}
+                return {'question': bank.question, 'options': bank.option.replace(',', '').replace(' ', '')}
         return {'question': None, 'options': None}
 
 
