@@ -9,6 +9,7 @@ class Question_bank(models.Model):
     question = models.CharField(verbose_name='题目', max_length=255, null=False)
     answer = models.CharField(verbose_name='答案', max_length=255, null=True, blank=True)
     option = models.CharField(verbose_name='选项', max_length=255, null=False)
+
     # create_time = models.DateTimeField(verbose_name='创建时间', auto_created=True, null=True, blank=True)
 
     class Meta:
@@ -84,4 +85,8 @@ class Cdkey(models.Model):
         return str(self.cdk)
 
 
-
+class Ippool(models.Model):
+    ip = models.CharField(verbose_name='IP地址', max_length=255, null=False)
+    port = models.CharField(verbose_name='端口', max_length=255, null=False)
+    whouse = models.ForeignKey(User, verbose_name='使用人', null=True, blank=True, on_delete=models.SET_NULL)
+    create_time = models.DateTimeField(verbose_name='创建时间', auto_created=True)

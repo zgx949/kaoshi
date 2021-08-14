@@ -6,10 +6,11 @@ from django.contrib import admin
 
 from .models import *
 
-
 admin.site.site_header = "建协批量考试系统"
 admin.site.site_title = "建协批量考试系统"
 admin.site.index_title = "建协批量考试系统"
+
+
 # Register your models here.
 
 class Question_bankAdmin(admin.ModelAdmin):
@@ -21,7 +22,7 @@ class Question_bankAdmin(admin.ModelAdmin):
 
 class UserAdmin(admin.ModelAdmin):
     list_filter = ('classname', 'status', 'create_time')
-    search_fields = ('id_card', )
+    search_fields = ('id_card',)
     list_display = ('classname', 'icon', 'id_card', 'name', 'status', 'userid_score', 'create_time')
     actions = ('start', 'check_user')
 
@@ -34,7 +35,6 @@ class UserAdmin(admin.ModelAdmin):
     #
     # start.short_description = '选中开始考试'
     # start.icon = 'fas fa-audio-description'
-
     def start(self, request, queryset):
         data_list = []
         for i in queryset:
@@ -90,6 +90,7 @@ class UserAdmin(admin.ModelAdmin):
 
             except:
                 pass
+
     check_user.short_description = '选中检查账号'
     check_user.icon = 'fas fa-audio-description'
 

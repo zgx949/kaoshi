@@ -1,18 +1,42 @@
+from fuzzywuzzy import fuzz
 from selenium import webdriver
 import re
 import json
 import time
 import requests
+import sqlite3
 
 print("正在读取账号...")
 f = open('C:\\Users\\Administrator\\Desktop\\' + input('请输入桌面上的文件名：'), 'r', encoding="utf-8")
 idcards = f.read().splitlines()
 print('读取成功！\n正在初始化图片识别模块...')
-access_token = requests.get(
-    url='https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=4y4KEQbtIz7IG7D7gIGw9sVW&client_secret=aupCv8FLh81blzNa1CLwQk71z14MBNuF').json()[
-    'access_token']
+# access_token = requests.get(
+#     url='https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=4y4KEQbtIz7IG7D7gIGw9sVW&client_secret=aupCv8FLh81blzNa1CLwQk71z14MBNuF').json()[
+#     'access_token']
 
 classname = ''
+print("正在读取题库...")
+conn = sqlite3.connect('db.sqlite3')
+cursor = conn.cursor()
+sql = "select id, classname, question, option  from ccenpx_question_bank group by question"
+cursor.execute(sql)
+values = cursor.fetchall()
+cursor.close()
+conn.commit()
+conn.close()
+answers = {}
+for qid, clname, qu, op in values:
+    op = op.replace(',', '').replace(' ', '')
+    temp = ''
+    for i in op:
+        temp += i + ','
+    op = temp[:-1]
+    answers[qu] = {'classname': clname, 'option': op}
+print("题库共有：", len(values))
+
+autofill = True
+if input("未匹配答案是否处理？（按回车键自动填充A，输入其他任意则放空）"):
+    autofill = False
 
 
 def OCR(base64):
@@ -99,34 +123,30 @@ def get_answer(userid, majorid, placeid, paperid, dataid):
     except TypeError:
         print(str(html) + '\n正在重新请求...')
         return get_answer(userid, majorid, placeid, paperid, dataid)
-    # str_data=re.findall('data_id\":\"(.*?)\",',html)[0]
-    # dataid=str_data.replace('\\','')
-    # str_data=re.findall('topic_id\":\"(.*?)\",',html)[0]
-    # topicid=str_data.replace('\\','')
+
     topicid = html['data']['topic_id']
     content = html['data']['content'].replace('src=\"', '')[0:-1]
     questions_text = OCR(content)
     print(questions_text)
     ##寻找答案，没有答案则选A
 
-    answers = requests.get('http://127.0.0.1:8000/ans', params={'classname': classname, 'likes': '90',
-                                                                'question': questions_text.replace(' ', '')}).json()[
-        'options']
-    if answers == None:
-        return rehtml
-    print('正在提交答案')
-    answer_save(userid, majorid, placeid, paperid, dataid, topicid, answers)
-
     # for i in range(len(questions)):
-    #     likes=fuzz.ratio(questions[i], questions_text)
-    #     if(likes>int(likesp)):
-    #         answer_save(userid,majorid,placeid,paperid,dataid,topicid,answers[i])
-    #         print('正在提交答案...相似度：'+str(likes))
-    #         break
-    #     else:
-    #         if(i==len(questions)-1):
-    #             print('没找到答案，已放空！')
+    for an in answers:
 
+        likes = fuzz.ratio(an, questions_text)
+        if likes >= 90 and classname[:1] in answers[an]['classname']:
+            answer_save(userid, majorid, placeid, paperid, dataid, topicid, answers[an]['option'])
+            print('正在提交答案...相似度：' + str(likes))
+            return rehtml
+
+    # answers = requests.get('http://127.0.0.1:8000/ans', params={'classname': classname, 'likes': '90',
+    #                                                             'question': questions_text.replace(' ', '')}).json()[
+    #     'options']
+    if autofill:
+        print('未匹配到答案，自动选A')
+        answer_save(userid, majorid, placeid, paperid, dataid, topicid, 'A')
+    else:
+        print('放空')
     return rehtml
 
 
@@ -154,13 +174,13 @@ if __name__ == "__main__":
     driver = webdriver.Firefox()
     for idcard in idcards:
         # input('按回车启动浏览器')
-
+        driver.delete_all_cookies()
         driver.get('https://www.ccenpx.com.cn/platform/login/p/type/1')
 
         driver.find_element_by_xpath('/html/body/div[4]/div[1]/form/div/div[1]/div[2]/input').send_keys(idcard)
         driver.find_element_by_xpath('/html/body/div[4]/div[1]/form/div/div[2]/div[2]/input').send_keys(idcard[-4:])
         try:
-            driver.find_element_by_xpath('/html/body/div[4]/div[1]/form/div/div[3]/div[2]/div[2]/span').click()
+            driver.find_element_by_xpath('//*[@id="btnSubmit"]').click()
         except:
             pass
         time.sleep(2)
@@ -186,7 +206,7 @@ if __name__ == "__main__":
             try:
                 classname = driver.find_element_by_xpath('//*[@id="major"]').text
             except:
-                classname = '通用'
+                classname = ''    # 通用
 
             print(
                 classname + '\nuserid:\n' + userid + '\n' + 'majorid：\n' + majorid + 'placeid:\n' + placeid + 'paperid:\n' + paperid)
@@ -244,7 +264,7 @@ if __name__ == "__main__":
                 print(e)
 
             continue
-        json_data = get_answer(userid, majorid, placeid, paperid, '0')
+        json_data = get_answer(userid, majorid, placeid, paperid, '')
         id = re.findall('\"id\":\"(.*?)\",', json_data)
 
         for i in range(6, 55):
@@ -252,24 +272,26 @@ if __name__ == "__main__":
             dataid = str_data.replace('\\', '')
             get_answer(userid, majorid, placeid, paperid, dataid)
         print('完成')
-        if input('是否继续？（输入0退出，任意键交卷并继续）') == '0':
+        temp = input('是否继续？（输入0退出，任意键交卷并继续）')
+        with open('已完成.txt', mode='a', encoding='utf-8') as f:
+            f.write(idcard + '\n')
+        
+        if temp != '0':
             try:
+
                 driver.execute_script('finish();')
-                driver.find_element_by_css_selector('.layui-layer-btn0').click()
+                driver.find_element_by_css_selector('/html/body/div[4]/div[3]/a[1]').click()
+
             except:
                 pass
+            time.sleep(1)
             driver.get('https://www.ccenpx.com.cn/student/home')
             try:
                 driver.execute_async_script("loginOut();")
                 break
             except Exception as e:
                 print(e)
-            exit()
+
         else:
-            continue
-            driver.get('https://www.ccenpx.com.cn/student/home')
-            try:
-                driver.execute_async_script("loginOut();")
-                break
-            except Exception as e:
-                print(e)
+            exit()
+
