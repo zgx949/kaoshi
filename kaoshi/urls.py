@@ -26,7 +26,6 @@ urlpatterns = [
     path('login', login),
     path('adduser', adduser),
     path('status', updatestatus),
-
-
+    path('proxy', get_porxy),
 
 ]

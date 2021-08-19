@@ -108,6 +108,13 @@ class CdkeyAdmin(admin.ModelAdmin):
     makcdks.action_url = 'http://www.baidu.com'
 
 
+class IppoolAdmin(admin.ModelAdmin):
+    list_display = ('ip', 'port', 'user', 'password', 'whouse', 'data', 'create_time')
+    search_fields = ('whouse',)
+    list_per_page = 50
+
+
+admin.site.register(Ippool, IppoolAdmin)
 admin.site.register(Question_bank, Question_bankAdmin)
 admin.site.register(User, UserAdmin)
 admin.site.register(Cdkey, CdkeyAdmin)

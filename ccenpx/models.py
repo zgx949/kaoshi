@@ -93,3 +93,9 @@ class Ippool(models.Model):
     whouse = models.ForeignKey(User, verbose_name='使用人', null=True, blank=True, on_delete=models.SET_NULL)
     data = models.CharField(verbose_name='其他信息', max_length=255, null=True, blank=True)
     create_time = models.DateTimeField(verbose_name='创建时间', auto_created=True)
+
+    class Meta:
+        verbose_name_plural = '代理池'
+
+    def __str__(self):
+        return str(self.user + ":" + self.password + "@" + self.ip + ":" + self.port)

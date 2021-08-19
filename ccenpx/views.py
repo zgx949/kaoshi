@@ -7,7 +7,7 @@ from fuzzywuzzy import fuzz
 from django.shortcuts import render
 
 # Create your views here.
-from ccenpx.models import Question_bank, User, Classname
+from ccenpx.models import Question_bank, User, Classname, Ippool
 
 
 class Exam:
@@ -189,4 +189,26 @@ def updatestatus(request):
             person.update(status=status)
             return HttpResponse(json.dumps({'msg': 'ok', 'code': 1}), content_type="application/json")
     except:
+        return HttpResponse(json.dumps({'msg': 'method must be get', 'code': -1}), content_type="application/json")
+
+
+def get_porxy(request):
+    if request.method == 'GET':
+        idcard = request.GET.get('idcard')
+        if idcard:
+            user = User.objects.get(id_card=idcard)
+            if user:
+                try:
+                    proxy = Ippool.objects.get(whouse__isnull=True)
+                except:
+                    return HttpResponse(json.dumps({'msg': 'nouser', 'code': -1}), content_type="application/json")
+                if proxy:
+                    proxy.whouse = user
+                    proxy.save()
+                    return HttpResponse(json.dumps({'msg': str(proxy), 'code': 1}), content_type="application/json")
+
+        return HttpResponse(json.dumps({'msg': 'nouser', 'code': -1}), content_type="application/json")
+
+
+    else:
         return HttpResponse(json.dumps({'msg': 'method must be get', 'code': -1}), content_type="application/json")
