@@ -194,10 +194,20 @@ def updatestatus(request):
 
 def get_porxy(request):
     if request.method == 'GET':
-        idcard = request.GET.get('idcard')
-        if idcard:
-            user = User.objects.get(id_card=idcard)
+        userid = request.GET.get('userid')
+        action = request.GET.get('action', '')
+
+        if userid:
+            try:
+                user = User.objects.get(userid=userid)
+            except:
+                return HttpResponse(json.dumps({'msg': 'nouser', 'code': -1}), content_type="application/json")
             if user:
+                if action == 'done':
+                    proxy = Ippool.objects.get(whouse=user)
+                    proxy.whouse = None
+                    proxy.save()
+
                 try:
                     proxy = Ippool.objects.get(whouse__isnull=True)
                 except:

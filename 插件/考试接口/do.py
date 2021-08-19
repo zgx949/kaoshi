@@ -37,7 +37,6 @@ sign = md5_string.upper()  # 转换成大写
 
 auth = "sign=" + sign + "&" + "orderno=" + orderno + "&" + "timestamp=" + timestamp + "&change=true"
 
-proxy = {"https": "http://" + ip_port}
 
 open_proxy = True
 
@@ -46,7 +45,7 @@ open_proxy = True
 
 
 class Dopaper:
-    def __init__(self, userid, majorid, placeid, paperid, classname, likes):
+    def __init__(self, userid, majorid, placeid, paperid, classname, likes, proxy):
         """
         初始化
         :param userid: 用户id
@@ -121,7 +120,7 @@ class Dopaper:
             }
             try:
                 if open_proxy:
-                    return requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
+                    return requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
                                          allow_redirects=False).json()
 
                 return requests.post(url=url, data=data, headers=headers).json()
@@ -170,7 +169,7 @@ class Dopaper:
             }
             try:
                 if open_proxy:
-                    respon = requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
+                    respon = requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
                                            allow_redirects=False)
                     if respon:
                         json_data = respon.json()
@@ -251,7 +250,7 @@ class Dopaper:
                     "txt_placeid": self.placeid, "txt_paperid": self.paperid,
                     "txt_officialid": self.offical_id, "txt_is_finsish": 1}
             if open_proxy:
-                respon = requests.post(url=url, data=data, headers=headers, proxies=proxy, verify=False,
+                respon = requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
                                        allow_redirects=False)
             else:
                 respon = requests.post(url=url, data=data, headers=headers)
@@ -302,8 +301,8 @@ def startexam(data_list_object):
     try:
         userid = data_list_object['userid']
         classname = data_list_object['classname']
+        proxy = requests.get(url=server, params={'userid': userid})
         headers = {
-            "Authorization": auth,
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
@@ -374,7 +373,7 @@ def startexam(data_list_object):
                     placeid = paper_data.json()['data']['placeid']
                     classname = paper_data.json()['data']['major']
 
-                person = Dopaper(userid, majorid, placeid, paperid, classname, 90)
+                person = Dopaper(userid, majorid, placeid, paperid, classname, 90, proxy)
 
                 for data_id in person.dataid_list:
                     # time.sleep(1)

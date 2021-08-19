@@ -15,34 +15,8 @@ from requests.exceptions import ProxyError
 
 auth = "1"
 
-
 # proxy = {"https": "http://" + ip_port}
 
-
-def get_proxy(api):
-    json_data = requests.get(api).json()
-    result = []
-    for obj in json_data['obj']:
-        username = obj['account']
-        password = obj['password']
-        ip = obj['ip']
-        port = obj['port']
-        result.append({"https": "http://" + username + ':' + password + '@' + ip + ":" + port, 'lock': 0})
-    return result
-
-
-apilist = [
-    'http://route.xiongmaodaili.com/xiongmao-web/cx/cxip?secret=dd269a72fc9e6accf51e016b4d9ff70a&orderNo=CX20210731140103IiofXuG6&isTxt=0&cityId=0&proxyType=1',
-    'http://route.xiongmaodaili.com/xiongmao-web/cx/cxip?secret=dd269a72fc9e6accf51e016b4d9ff70a&orderNo=CX20210731135821eJrJS031&isTxt=0&cityId=0&proxyType=1',
-    'http://route.xiongmaodaili.com/xiongmao-web/cx/cxip?secret=dd269a72fc9e6accf51e016b4d9ff70a&orderNo=CX202107311346135J4kQn2g&isTxt=0&cityId=0&proxyType=1',
-
-]
-proxies = []
-
-for api in apilist:
-    result = get_proxy(api)
-    for i in result:
-        proxies.append(i)
 
 open_proxy = True
 
@@ -270,6 +244,8 @@ class Dopaper:
                             print(requests.get(url='http://' + server + '/status',
                                                params={'classname': self.classname, 'userid': self.userid,
                                                        'status': 2}).json())
+
+                            requests.get()
                             print("已经通过")
                             return "已经通过"
                         else:
@@ -293,6 +269,7 @@ class Dopaper:
                 print(requests.get(url='http://' + server + '/status',
                                    params={'classname': self.classname, 'userid': self.userid, 'status': -1}).json())
                 return "异常"
+
         except:
             return self.submit()
 
@@ -304,18 +281,16 @@ def startexam(data_list_object):
     :return:
     """
     # 获取考试信息
-    temp_proxiy = {}
+    proxiy = {}
     try:
-        for temp in proxies:
-            if temp['lock'] == 0:
-                temp['lock'] = 1
-                temp_proxiy = temp
-                break
 
+        proxy_data = requests.get(url='http://' + server + '/proxy').json()
+        if proxy_data['code'] != 1:
+            return
+        proxiy = proxy_data['msg']
         userid = data_list_object['userid']
         classname = data_list_object['classname']
         headers = {
-            "Authorization": auth,
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
@@ -328,12 +303,13 @@ def startexam(data_list_object):
             'Sec-Fetch-Site': 'same-site',
         }
         if open_proxy:
+
             try:
                 exam_data = requests.post(url='https://api.ccenpx.com.cn/official/official_major',
                                           headers=headers,
                                           data={
                                               'txt_userid': userid,
-                                          }, proxies=temp_proxiy, verify=False, allow_redirects=False)
+                                          }, proxies=proxiy, verify=False, allow_redirects=False)
             except:
                 return startexam(data_list_object)
         else:
@@ -362,7 +338,7 @@ def startexam(data_list_object):
                                                        'txt_majorid': majorid,
                                                        'txt_placeid': placeid,
                                                        'txt_paperid': ''
-                                                   }, proxies=temp_proxiy, verify=False, allow_redirects=False)
+                                                   }, proxies=proxiy, verify=False, allow_redirects=False)
                     except:
                         return startexam(data_list_object)
 
@@ -381,7 +357,7 @@ def startexam(data_list_object):
                     placeid = paper_data.json()['data']['placeid']
                     classname = paper_data.json()['data']['major']
 
-                person = Dopaper(userid, majorid, placeid, paperid, classname, 90, temp_proxiy)
+                person = Dopaper(userid, majorid, placeid, paperid, classname, 90, proxiy)
 
                 for data_id in person.dataid_list:
                     # time.sleep(1)
@@ -408,7 +384,7 @@ def startexam(data_list_object):
         return ''
 
 
-pool = threadpool.ThreadPool(len(proxies))
+pool = threadpool.ThreadPool(10)
 
 
 def get_ids(data_list):
