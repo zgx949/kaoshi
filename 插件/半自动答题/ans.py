@@ -274,7 +274,16 @@ if __name__ == "__main__":
         print('完成')
         temp = input('是否继续？（输入0退出，任意键交卷并继续）')
         with open('已完成.txt', mode='a', encoding='utf-8') as f:
-            f.write(idcard + '\n')
+            if driver.current_url == 'https://www.ccenpx.com.cn/student/official/score':
+                text = driver.find_element_by_xpath('/html/body/div/div[1]/div[3]/div[2]/div/div[3]').text
+                if text == '考试合格':
+                    f.write(idcard + '\t已通过\n')
+                elif "补考" in text:
+                    f.write(idcard + '\t不合格\n')
+                else:
+                    f.write(idcard + '\t未知\n')
+            else:
+                f.write(idcard + '\t未知\n')
         
         if temp != '0':
             try:

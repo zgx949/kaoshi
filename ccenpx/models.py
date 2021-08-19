@@ -88,5 +88,8 @@ class Cdkey(models.Model):
 class Ippool(models.Model):
     ip = models.CharField(verbose_name='IP地址', max_length=255, null=False)
     port = models.CharField(verbose_name='端口', max_length=255, null=False)
+    user = models.CharField(verbose_name='用户名', max_length=255, null=False)
+    password = models.CharField(verbose_name='密码', max_length=255, null=False)
     whouse = models.ForeignKey(User, verbose_name='使用人', null=True, blank=True, on_delete=models.SET_NULL)
+    data = models.CharField(verbose_name='其他信息', max_length=255, null=True, blank=True)
     create_time = models.DateTimeField(verbose_name='创建时间', auto_created=True)
