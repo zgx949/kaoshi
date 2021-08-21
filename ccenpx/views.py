@@ -215,7 +215,8 @@ def get_porxy(request):
                 if proxy:
                     proxy.whouse = user
                     proxy.save()
-                    return HttpResponse(json.dumps({'msg': str(proxy), 'code': 1}), content_type="application/json")
+                    return HttpResponse(json.dumps({'msg': str('http://' + proxy), 'code': 1}),
+                                        content_type="application/json")
 
         return HttpResponse(json.dumps({'msg': 'nouser', 'code': -1}), content_type="application/json")
 

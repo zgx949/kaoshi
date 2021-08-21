@@ -287,7 +287,8 @@ def startexam(data_list_object):
         proxy_data = requests.get(url='http://' + server + '/proxy').json()
         if proxy_data['code'] != 1:
             return
-        proxiy = proxy_data['msg']
+        proxiy['http'] = proxy_data['msg']
+        proxiy['https'] = proxy_data['msg']
         userid = data_list_object['userid']
         classname = data_list_object['classname']
         headers = {
