@@ -207,7 +207,12 @@ def get_porxy(request):
                     proxy = Ippool.objects.get(whouse=user)
                     proxy.whouse = None
                     proxy.save()
-
+                try:
+                    proxy = Ippool.objects.get(whouse=user)
+                    return HttpResponse(json.dumps({'msg': 'http://' + str(proxy), 'code': 1}),
+                                        content_type="application/json")
+                except:
+                    pass
                 try:
                     proxy = Ippool.objects.get(whouse__isnull=True)
                 except:
@@ -215,7 +220,7 @@ def get_porxy(request):
                 if proxy:
                     proxy.whouse = user
                     proxy.save()
-                    return HttpResponse(json.dumps({'msg': str('http://' + proxy), 'code': 1}),
+                    return HttpResponse(json.dumps({'msg': 'http://' + str(proxy), 'code': 1}),
                                         content_type="application/json")
 
         return HttpResponse(json.dumps({'msg': 'nouser', 'code': -1}), content_type="application/json")

@@ -106,7 +106,7 @@ def main(path, fname, driver):
 
 
 if __name__ == '__main__':
-    path = r'D:\codes\py\django\建协系统\user'
+    path = r'D:\codes\py\django\kaoshi\插件\登录导入\user'
     driver = webdriver.Firefox()
     input("配置完代理按回车键开始")
     for name in os.listdir(path):

@@ -325,14 +325,16 @@ def startexam(data_list_object):
         userid = data_list_object['userid']
         classname = data_list_object['classname']
         headers = {
-            "Authorization": auth,
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0',
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             'Origin': 'https://www.ccenpx.com.cn',
             'Connection': 'keep-alive',
-            'Referer': 'https://www.ccenpx.com.cn/student/official/p/menu/official',
+            'Referer': 'https://www.ccenpx.com.cn/',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
         }
         if open_proxy:
             try:
@@ -353,10 +355,10 @@ def startexam(data_list_object):
         placeid = ''
         if exam_data:
             for item in exam_data.json()['data']:
-                if item['name'].replace('员', '')[:1] in classname:
-                    majorid = item['majorid']
-                    placeid = item['placeid']
-                    break
+                # if item['name'].replace('员', '')[:1] in classname:
+                majorid = item['majorid']
+                placeid = item['placeid']
+                break
 
         # paperid = ''
         if open_proxy:

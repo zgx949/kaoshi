@@ -2,6 +2,8 @@ import time
 import hashlib
 import requests
 import threadpool
+import re
+from requests.auth import HTTPProxyAuth
 # from multiprocessing import Pool
 from flask import Flask, request, jsonify
 
@@ -99,9 +101,11 @@ class Dopaper:
                 'Referer': 'https://www.ccenpx.com.cn/',
                 'Cache-Control': 'max-age=0',
             }
+            params = {'uuuid': self.userid}
             try:
                 if open_proxy:
-                    return requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
+                    return requests.post(url=url, params=params, data=data, headers=headers, proxies=self.proxy,
+                                         verify=False,
                                          allow_redirects=False).json()
 
                 return requests.post(url=url, data=data, headers=headers).json()
@@ -128,6 +132,7 @@ class Dopaper:
         """
         try:
             url = r'https://api.ccenpx.com.cn/official/official_topic'
+            params = {'uuid': self.userid}
             data = {'txt_userid': self.userid,
                     'txt_majorid': self.majorid,
                     'txt_placeid': self.placeid,
@@ -136,27 +141,28 @@ class Dopaper:
                     'txt_dataid': dataid,
                     }
             headers = {
-                "Authorization": auth,
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0',
+                'Host': 'api.ccenpx.com.cn',
                 'Accept': 'application/json, text/javascript, */*; q=0.01',
                 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+                'Referer': 'https://www.ccenpx.com.cn/',
                 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
                 'Origin': 'https://www.ccenpx.com.cn',
                 'Connection': 'keep-alive',
-                'Referer': 'https://www.ccenpx.com.cn/',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-site',
+                'Cache-Control': 'max-age=0, no-cache',
+                'Pragma': 'no-cache',
             }
             try:
                 if open_proxy:
-                    respon = requests.post(url=url, data=data, headers=headers, proxies=self.proxy, verify=False,
+                    respon = requests.post(url=url, params=params, data=data, headers=headers, proxies=self.proxy,
+                                           verify=False,
                                            allow_redirects=False)
                     if respon:
                         json_data = respon.json()
                 else:
                     json_data = requests.post(url=url, data=data, headers=headers).json()
-            except ProxyError:
+            except Exception as e:
+                print('代理错误', e)
                 return self.get_question(dataid)
 
             if '请稍后再试' in str(json_data):
@@ -215,7 +221,6 @@ class Dopaper:
         try:
             url = 'https://api.ccenpx.com.cn/official/official_score'
             headers = {
-                "Authorization": auth,
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0',
                 'Accept': 'application/json, text/javascript, */*; q=0.01',
                 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
@@ -274,6 +279,12 @@ class Dopaper:
             return self.submit()
 
 
+def get_proxy():
+    url = 'http://tiqu.pyhttp.taolop.com/getip?count=1&neek=8545&type=1&yys=0&port=1&sb=&mr=1&sep=1&time=3'
+    text = requests.get(url=url).text
+    return 'http://' + text.replace('\r', '').replace('\n', '')
+
+
 def startexam(data_list_object):
     """
     开始考试
@@ -284,25 +295,22 @@ def startexam(data_list_object):
     proxiy = {}
     try:
 
-        proxy_data = requests.get(url='http://' + server + '/proxy').json()
-        if proxy_data['code'] != 1:
-            return
-        proxiy['http'] = proxy_data['msg']
-        proxiy['https'] = proxy_data['msg']
         userid = data_list_object['userid']
+
+        proxiy = {"https": get_proxy()}
         classname = data_list_object['classname']
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+            'Host': 'api.ccenpx.com.cn',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0',
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             'Origin': 'https://www.ccenpx.com.cn',
             'Connection': 'keep-alive',
             'Referer': 'https://www.ccenpx.com.cn/',
-            'Sec-Fetch-Dest': 'empty',
-            'Sec-Fetch-Mode': 'cors',
-            'Sec-Fetch-Site': 'same-site',
+            'Cache-Control': 'max-age=0',
         }
+
         if open_proxy:
 
             try:
@@ -310,8 +318,9 @@ def startexam(data_list_object):
                                           headers=headers,
                                           data={
                                               'txt_userid': userid,
-                                          }, proxies=proxiy, verify=False, allow_redirects=False)
-            except:
+                                          })
+            except Exception as e:
+                print(e)
                 return startexam(data_list_object)
         else:
             exam_data = requests.post(url='https://api.ccenpx.com.cn/official/official_major',
@@ -328,7 +337,7 @@ def startexam(data_list_object):
                     continue
                 majorid = item['majorid']
                 placeid = item['placeid']
-                classname = item['name'].replace('员', '')[:1]
+                classname = item['name'].replace('员', '')[:2]
 
                 if open_proxy:
                     try:
@@ -339,8 +348,9 @@ def startexam(data_list_object):
                                                        'txt_majorid': majorid,
                                                        'txt_placeid': placeid,
                                                        'txt_paperid': ''
-                                                   }, proxies=proxiy, verify=False, allow_redirects=False)
-                    except:
+                                                   })
+                    except Exception as e:
+                        print(e)
                         return startexam(data_list_object)
 
                 else:
@@ -385,7 +395,7 @@ def startexam(data_list_object):
         return ''
 
 
-pool = threadpool.ThreadPool(10)
+pool = threadpool.ThreadPool(1)
 
 
 def get_ids(data_list):

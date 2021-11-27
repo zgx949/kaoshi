@@ -16,7 +16,7 @@ print('读取成功！\n正在初始化图片识别模块...')
 
 classname = ''
 print("正在读取题库...")
-conn = sqlite3.connect('db.sqlite3')
+conn = sqlite3.connect('./db.sqlite3')
 cursor = conn.cursor()
 sql = "select id, classname, question, option  from ccenpx_question_bank group by question"
 cursor.execute(sql)
@@ -70,6 +70,7 @@ def answer_save(userid, majorid, placeid, paperid, dataid, topicid, answer):
             'txt_dataid': dataid,
             'txt_topicid': topicid,
             'txt_answers': answer,
+            'txt_partdate': time.strftime("%Y%m%d", time.localtime())
             }
     headers = {
         'Host': 'api.ccenpx.com.cn',
@@ -85,6 +86,7 @@ def answer_save(userid, majorid, placeid, paperid, dataid, topicid, answer):
     html = requests.post(url=url, data=data, headers=headers).text
     json_data = json.loads(html)
     print(dataid + '提交成功：' + answer)
+    print(json_data)
 
 
 def get_answer(userid, majorid, placeid, paperid, dataid):

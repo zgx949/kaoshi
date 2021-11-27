@@ -1073,3 +1073,1063 @@ JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILU
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1629530603122	geckodriver	INFO	Listening on 127.0.0.1:60161
+1629530603659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileU1OFPL"
+1629530603944	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileU1OFPL\\search.json.mozlz4", (void 0)))
+1629530605931	Marionette	INFO	Listening on port 60167
+1629530606283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629530630934	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629530661080	Marionette	INFO	Stopped listening on port 60167
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1629530686518	geckodriver	INFO	Listening on 127.0.0.1:60296
+1629530687021	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilebRDzoX"
+1629530687316	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilebRDzoX\\search.json.mozlz4", (void 0)))
+1629530689330	Marionette	INFO	Listening on port 60304
+1629530689638	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629530704756	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629530725989	Marionette	INFO	Stopped listening on port 60304
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1629538823546	geckodriver	INFO	Listening on 127.0.0.1:58449
+1629538824061	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileFzkk5p"
+1629538824381	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileFzkk5p\\search.json.mozlz4", (void 0)))
+1629538826283	Marionette	INFO	Listening on port 58454
+1629538826679	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629538839150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629538920091	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1629539256731	Marionette	INFO	Stopped listening on port 58454
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ExpectFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ForgetFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ExpectFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ForgetFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1629539305819	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1629539596614	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1629540258782	geckodriver	INFO	Listening on 127.0.0.1:50182
+1629540259286	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileXSH6L8"
+1629540259539	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileXSH6L8\\search.json.mozlz4", (void 0)))
+1629540261290	Marionette	INFO	Listening on port 50187
+1629540261314	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629540297077	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629540319451	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629540403240	geckodriver	INFO	Listening on 127.0.0.1:61700
+1629540403775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileXAvgJf"
+1629540404252	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileXAvgJf\\search.json.mozlz4", (void 0)))
+1629540405761	Marionette	INFO	Listening on port 61705
+1629540405798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629540419807	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629641086439	geckodriver	INFO	Listening on 127.0.0.1:55391
+1629641086772	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileR3GzUn"
+1629641087063	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileR3GzUn\\search.json.mozlz4", (void 0)))
+1629641088920	Marionette	INFO	Listening on port 55396
+1629641089392	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1629641098093	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629641107624	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629641127616	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1629641140158	Marionette	INFO	Stopped listening on port 55396
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1630024545425	geckodriver	INFO	Listening on 127.0.0.1:52503
+1630024545726	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilepANNBX"
+1630024546038	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilepANNBX\\search.json.mozlz4", (void 0)))
+1630024548368	Marionette	INFO	Listening on port 52508
+1630024548852	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630058153593	geckodriver	INFO	Listening on 127.0.0.1:49328
+1630058153917	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileFDeGHz"
+1630058154198	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileFDeGHz\\search.json.mozlz4", (void 0)))
+1630058156155	Marionette	INFO	Listening on port 49333
+1630058156533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630058164992	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630058876244	Marionette	INFO	Stopped listening on port 49333
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+rom scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  security-state/cert-revocations Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  Message: TypeError: NetworkError when attempting to fetch resource.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630058885458	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630059032700	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630059101417	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630059106038	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630059454953	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630059643507	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630059727947	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060151701	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060314832	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060358446	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060419763	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060672522	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060728096	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+SourceActor threw an exception: Error: Failed to fetch https://www.ccenpx.com.cn/static/layui/layui.js. Code 2152398878.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.ccenpx.com.cn/static/layui/layui.js. Code 2152398878.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://www.ccenpx.com.cn/static/layui/layui.js. Code 2152398878.
+SourceActor threw an exception: Error: Failed to fetch https://www.ccenpx.com.cn/static/js/api_url.js. Code 2152398878.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.ccenpx.com.cn/static/js/api_url.js. Code 2152398878.", "resource://devtools/shared/DevToolsUtils.js", 556))
+SourceActor threw an exception: Error: Failed to fetch https://www.ccenpx.com.cn/student/official/topic. Code 2152398878.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.ccenpx.com.cn/student/official/topic. Code 2152398878.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://www.ccenpx.com.cn/static/js/api_url.js. Code 2152398878.
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://www.ccenpx.com.cn/student/official/topic. Code 2152398878.
+console.error: "Task cancelled"
+console.warn: "Resource  of root-node was not found."
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+console.warn: "Resource  of root-node was not found."
+1630060940860	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+console.warn: "Resource  of root-node was not found."
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+console.warn: "Resource  of root-node was not found."
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+console.warn: "Resource  of root-node was not found."
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+console.warn: "Resource  of root-node was not found."
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+1630060978089	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630060987805	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630160565959	geckodriver	INFO	Listening on 127.0.0.1:60853
+1630160566236	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilegyiGVZ"
+1630160567208	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilegyiGVZ\\search.json.mozlz4", (void 0)))
+1630160569443	Marionette	INFO	Listening on port 60859
+1630160569895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630160692134	geckodriver	INFO	Listening on 127.0.0.1:60761
+1630160692684	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileJJCrhJ"
+1630160693007	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileJJCrhJ\\search.json.mozlz4", (void 0)))
+1630160695171	Marionette	INFO	Listening on port 60766
+1630160695323	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630160765100	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630160882162	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630160975133	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1630161115580	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1630161237848	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161327751	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161442637	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161534255	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161630384	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161732639	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161838360	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1630161983530	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637504196043	geckodriver	INFO	Listening on 127.0.0.1:54520
+1637504196340	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilezIO1QY"
+1637504196652	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilezIO1QY\\search.json.mozlz4", (void 0)))
+1637504198675	Marionette	INFO	Listening on port 54525
+1637504198962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Child 13576, MediaDecoderStateMachine #1] WARNING: 1526c5f0ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #1] WARNING: 1526c824120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #1] WARNING: 1526864f200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: resource://devtools/server/actors/utils/event-loop.js, line 83: debuggee 'https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js:1' would run
+JavaScript warning: resource://devtools/server/actors/utils/event-loop.js, line 83: debuggee 'https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js:1' would run
+JavaScript warning: resource://devtools/server/actors/utils/event-loop.js, line 83: debuggee 'https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js:1' would run
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: Error: Uncaught, unspecified "error" event. (NetworkError)
+console.error: "Task cancelled"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+[Child 13576, MediaDecoderStateMachine #2] WARNING: 1527041d4a0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #3] WARNING: 1526a0672e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #3] WARNING: 1526a08fac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #3] WARNING: 1526a08fe40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #3] WARNING: 1526c5f0820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #3] WARNING: 1526a08f9e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #3] WARNING: 152704e7d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #4] WARNING: 15276e32900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: resource://devtools/client/debugger/src/utils/context.js, line 36: Error: Page has navigated
+[Child 13576, MediaDecoderStateMachine #6] WARNING: 1527062e040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #6] WARNING: 15276e32900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 13576, MediaDecoderStateMachine #6] WARNING: 152704e7200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ExpectFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ForgetFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 13576, MediaDecoderStateMachine #7] WARNING: 1527062e9e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1637506927770	Marionette	INFO	Stopped listening on port 54525
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1637589390408	geckodriver	INFO	Listening on 127.0.0.1:50114
+1637589390770	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile8CKlna"
+1637589391407	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile8CKlna\\search.json.mozlz4", (void 0)))
+1637589393346	Marionette	INFO	Listening on port 50119
+1637589393454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637589446852	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: resource://devtools/server/actors/utils/event-loop.js, line 83: debuggee 'https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js:1' would run
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ExpectFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ForgetFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript warning: resource://devtools/server/actors/utils/event-loop.js, line 83: debuggee 'https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js:1' would run
+1637590566696	geckodriver	INFO	Listening on 127.0.0.1:50899
+1637590567234	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilec49eQo"
+1637590567486	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilec49eQo\\search.json.mozlz4", (void 0)))
+1637590569195	Marionette	INFO	Listening on port 50904
+1637590569255	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+1637590669703	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637590817376	geckodriver	INFO	Listening on 127.0.0.1:51095
+1637590817901	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileFccvjw"
+1637590818130	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileFccvjw\\search.json.mozlz4", (void 0)))
+1637590819735	Marionette	INFO	Listening on port 51100
+1637590819920	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+1637591036583	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637591100027	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1637591416302	Marionette	INFO	Stopped listening on port 51100
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1637591434658	geckodriver	INFO	Listening on 127.0.0.1:52005
+1637591435185	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilerzMk8I"
+1637591435437	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilerzMk8I\\search.json.mozlz4", (void 0)))
+1637591437396	Marionette	INFO	Listening on port 52010
+1637591437807	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+1637591534183	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637592355251	geckodriver	INFO	Listening on 127.0.0.1:53232
+1637592355790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilehpJ4Ap"
+1637592356038	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilehpJ4Ap\\search.json.mozlz4", (void 0)))
+1637592357832	Marionette	INFO	Listening on port 53237
+1637592357933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1637592420482	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: https://www.ccenpx.com.cn/platform/login/p/type/1, line 344: ReferenceError: getvaptcha is not defined
+1637592465803	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+JavaScript error: chrome://global/content/elements/videocontrols.js, line 3258: TypeError: can't access dead object
+console.warn: "Already stopped listening to server sent events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1637654184364	geckodriver	INFO	Listening on 127.0.0.1:52294
+1637654184900	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileqGq2F3"
+1637654186051	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileqGq2F3\\search.json.mozlz4", (void 0)))
+1637654187884	Marionette	INFO	Listening on port 52299
+1637654188028	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637654254243	Marionette	INFO	Stopped listening on port 52299
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637654261928	geckodriver	INFO	Listening on 127.0.0.1:52505
+1637654262434	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile3RBrPL"
+1637654262679	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile3RBrPL\\search.json.mozlz4", (void 0)))
+1637654264341	Marionette	INFO	Listening on port 52510
+1637654264452	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637654393589	geckodriver	INFO	Listening on 127.0.0.1:52986
+1637654394127	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile46QCqw"
+1637654394368	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile46QCqw\\search.json.mozlz4", (void 0)))
+1637654396164	Marionette	INFO	Listening on port 52991
+1637654396256	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637654408146	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637654566911	geckodriver	INFO	Listening on 127.0.0.1:53216
+1637654567448	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileyQ9Lfl"
+1637654567706	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileyQ9Lfl\\search.json.mozlz4", (void 0)))
+1637654569547	Marionette	INFO	Listening on port 53221
+1637654569575	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637654652754	Marionette	INFO	Stopped listening on port 53221
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637654664114	geckodriver	INFO	Listening on 127.0.0.1:53381
+1637654664651	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilePLjJav"
+1637654664879	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilePLjJav\\search.json.mozlz4", (void 0)))
+1637654666566	Marionette	INFO	Listening on port 53386
+1637654666676	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637655030627	geckodriver	INFO	Listening on 127.0.0.1:53782
+1637655031164	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileHcIlfh"
+1637655031401	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileHcIlfh\\search.json.mozlz4", (void 0)))
+1637655033078	Marionette	INFO	Listening on port 53787
+1637655033183	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637655042700	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637655327055	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1637655465109	geckodriver	INFO	Listening on 127.0.0.1:54278
+1637655465647	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileKhXv9U"
+1637655465888	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileKhXv9U\\search.json.mozlz4", (void 0)))
+1637655467589	Marionette	INFO	Listening on port 54283
+1637655467674	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+[Child 6688, MediaDecoderStateMachine #1] WARNING: 279d652d120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 6688, MediaDecoderStateMachine #1] WARNING: 279ce404e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1637655700951	Marionette	INFO	Stopped listening on port 54283
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1637655705550	geckodriver	INFO	Listening on 127.0.0.1:54535
+1637655706073	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileY53hsL"
+1637655706312	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileY53hsL\\search.json.mozlz4", (void 0)))
+1637655708018	Marionette	INFO	Listening on port 54540
+1637655708103	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.5/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ydwwnsiz0RrvfpNl89rQqoBRiFg6eVxNIdbgsmjvwYM.js line 1 > eval line 5677 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://aeu.alicdn.com/waf/antidomxss_v640.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1637655902004	Marionette	INFO	Stopped listening on port 54540
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637655904730	geckodriver	INFO	Listening on 127.0.0.1:54886
+1637655905268	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileAtX88A"
+1637655905496	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileAtX88A\\search.json.mozlz4", (void 0)))
+1637655907187	Marionette	INFO	Listening on port 54891
+1637655907298	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Child 14664, MediaDecoderStateMachine #1] WARNING: 258cf8714a0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 14664, MediaDecoderStateMachine #1] WARNING: 258ca5503c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: Error: Uncaught, unspecified "error" event. (NetworkError)
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: Error: Uncaught, unspecified "error" event. (NetworkError)
+console.error: "Task cancelled"
+JavaScript error: resource://devtools/client/netmonitor/src/connector/firefox-data-provider.js, line 588: Error: Error while calling method getRequestHeaders: No such actor for ID: server0.conn0.netEvent4618
+JavaScript error: resource://devtools/client/netmonitor/src/connector/firefox-data-provider.js, line 588: Error: Error while calling method getEventTimings: No such actor for ID: server0.conn0.netEvent4618
+1637656050067	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.error: "Task cancelled"
+1637656222645	Marionette	INFO	Stopped listening on port 54891
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1637656227822	geckodriver	INFO	Listening on 127.0.0.1:55232
+1637656228359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofiletLIxz1"
+1637656228597	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofiletLIxz1\\search.json.mozlz4", (void 0)))
+1637656230303	Marionette	INFO	Listening on port 55237
+1637656230381	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+[Child 14948, MediaDecoderStateMachine #1] WARNING: 245e29e1200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1637656314125	Marionette	INFO	Stopped listening on port 55237
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1637656318779	geckodriver	INFO	Listening on 127.0.0.1:55396
+1637656319315	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileI33gl6"
+1637656319549	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileI33gl6\\search.json.mozlz4", (void 0)))
+1637656321255	Marionette	INFO	Listening on port 55401
+1637656321334	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: Error: Uncaught, unspecified "error" event. (NetworkError)
+1637656354498	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: Error: Uncaught, unspecified "error" event. (NetworkError)
+1637656406072	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.ccenpx.com.cn/static/layui/css/layui.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.ccenpx.com.cn/testcenter/testcenter.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.ccenpx.com.cn/static/js/pd_confirm/jquery.pd.confirm.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.ccenpx.com.cn/static/layui/css/layui.css without a browsingContextID set
+1637656548608	Marionette	INFO	Stopped listening on port 55401
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637656553690	geckodriver	INFO	Listening on 127.0.0.1:55766
+1637656554205	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileSYlzvi"
+1637656554447	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileSYlzvi\\search.json.mozlz4", (void 0)))
+1637656556135	Marionette	INFO	Listening on port 55771
+1637656556224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637656565783	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+[Child 1800, MediaDecoderStateMachine #1] WARNING: 2f207584580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: Error: Uncaught, unspecified "error" event. (NetworkError)
+console.error: "Task cancelled"
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this._mediaElement is null
+1637656718360	geckodriver	INFO	Listening on 127.0.0.1:56057
+1637656718884	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile9W3oao"
+1637656719123	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile9W3oao\\search.json.mozlz4", (void 0)))
+1637656720737	Marionette	INFO	Listening on port 56062
+1637656720902	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637656830402	Marionette	INFO	Stopped listening on port 56062
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637657195990	geckodriver	INFO	Listening on 127.0.0.1:56549
+1637657196515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileJhCXNN"
+1637657196764	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileJhCXNN\\search.json.mozlz4", (void 0)))
+1637657198495	Marionette	INFO	Listening on port 56554
+1637657198538	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248eab41c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2af7f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2af4740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2af7e40 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e7a1fd60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2aee120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2a55900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e9f73820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e6c062e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2aee040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2aee040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2a55f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e9c14040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2a55f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e31b2d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248eab5e740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e6c063c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248ee0ad900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e3134d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e3134ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248f1bab2e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e69792e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248f07043c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e7a47f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2a553c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 980: TypeError: state.hideToggleDeferredTask is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e3134200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e3134ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248ed8abc80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248f07b3660 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248ef9323c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e3134200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248e2ad7580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248ed8abba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 248f191cf20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 924, MediaDecoderStateMachine #1] WARNING: 24882227660 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+console.error: "Task cancelled"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: resource://devtools/server/actors/inspector/event-collector.js, line 530: debuggee 'https://www.ccenpx.com.cn/static/js/jquery-1.11.3.min.js:4' would run
+1637657590815	geckodriver	INFO	Listening on 127.0.0.1:56997
+1637657591332	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile6O2E07"
+1637657591572	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile6O2E07\\search.json.mozlz4", (void 0)))
+1637657593323	Marionette	INFO	Listening on port 57002
+1637657593358	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b7d0fe2e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00335040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00e80580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b007a3c80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003353c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00335740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00ced740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00cc5580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003352e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b007a3f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003353c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b0079ac80 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003b1580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003353c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00e533c0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00c40120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003352e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00e50820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003b9820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370ba0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370740 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00e61900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00c3f040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b007e9900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b0d9c3f20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003b9900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b008cc4a0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b008cc660 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://live-cdn.baijiayun.com/www-video-jssdk/dep/videojs/0.0.6/dist/videojs.js, line 1: TypeError: this.el_ is null
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b003b9ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b007e9ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b10bc92e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b03d67900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b045082e0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b001ea120 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b001ea040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b0da78040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b014e1580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b008cc580 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b001ea040 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b115df820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 9492, MediaDecoderStateMachine #1] WARNING: 23b00370200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1637657921968	geckodriver	INFO	Listening on 127.0.0.1:57472
+1637657922474	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile8aR7qk"
+1637657922740	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile8aR7qk\\search.json.mozlz4", (void 0)))
+1637657924626	Marionette	INFO	Listening on port 57477
+1637657925093	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637657993262	Marionette	INFO	Stopped listening on port 57477
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1637657998234	geckodriver	INFO	Listening on 127.0.0.1:57605
+1637657998772	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileWCkfeP"
+1637657999027	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofileWCkfeP\\search.json.mozlz4", (void 0)))
+1637658000801	Marionette	INFO	Listening on port 57612
+1637658000904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637658009229	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1637658236512	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1637658236513	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ydwwnsiz0RrvfpNl89rQqoBRiFg6eVxNIdbgsmjvwYM.js line 1 > eval line 7253 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://g.csdnimg.cn/tingyun/1.8.5/blog.js, line 1: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript error: https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1076724771190722&output=html&h=600&slotname=1894159733&adk=244608859&adf=1401350160&pi=t.ma~as.1894159733&w=300&fwrn=4&fwrnh=100&lmt=1637658238&rafmt=1&psa=0&format=300x600&url=https%3A%2F%2Fblog.csdn.net%2Fqq_35531549%2Farticle%2Fdetails%2F88429138%3Futm_medium%3Ddistribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-88429138.pc_agg_new_rank%26utm_term%3DSelenium%25E8%258E%25B7%25E5%258F%2596%25E5%25AE%258C%25E6%2595%25B4html%25E4%25BB%25A3%25E7%25A0%2581%26spm%3D1000.2123.3001.4430&flash=0&fwr=0&fwrattr=true&rpe=1&resp_fmts=4&wgl=1&dt=1637658238165&bpp=5&bdt=728&idt=34&shv=r20211111&mjsv=m202111110101&ptt=9&saldr=aa&abxe=1&cookie=ID%3D0eb658fe356ed1d3-22f5ff903bcf00a5%3AT%3D1637658235%3ART%3D1637658235%3AS%3DALNI_Maih-0lqCnaswV_OqHVd1UwseYNYA&correlator=790264454583&frm=20&pv=2&ga_vid=1905559267.1637658238&ga_sid=1637658238&ga_hid=2144445756&ga_fc=0&u_tz=480&u_his=1&u_h=864&u_w=1536&u_ah=824&u_aw=1536&u_cd=24&adx=103&ady=1845&biw=1266&bih=661&scr_x=0&scr_y=0&oid=2&pvsid=762440319805435&pem=851&tmod=1805970855&ref=https%3A%2F%2Fwww.csdn.net%2Ftags%2FNtzaEg3sMDQzOTEtYmxvZwO0O0OO0O0O.html&eae=0&fc=896&brdim=3%2C3%2C3%2C3%2C1536%2C0%2C1294%2C779%2C1283%2C661&vis=1&rsz=%7C%7CpeEbr%7C&abl=CS&pfx=0&fu=128&bc=31&ifi=1&uci=a!1&btvi=1&fsb=1&xpc=Hit4X5vOjh&p=https%3A//blog.csdn.net&dtd=78, line 1: ReferenceError: buildAttribution is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ydwwnsiz0RrvfpNl89rQqoBRiFg6eVxNIdbgsmjvwYM.js line 1 > eval line 3224 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://aeu.alicdn.com/waf/antidomxss_v640.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+[Child 14176, MediaDecoderStateMachine #1] WARNING: 192d934bf20 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1637658915145	geckodriver	INFO	Listening on 127.0.0.1:58499
+1637658915683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilemgixyv"
+1637658915930	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilemgixyv\\search.json.mozlz4", (void 0)))
+1637658917559	Marionette	INFO	Listening on port 58504
+1637658917702	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637658927995	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 4396, MediaDecoderStateMachine #1] WARNING: 1dd6232d200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 4396, MediaDecoderStateMachine #1] WARNING: 1dd61bd9d60 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1637659011863	Marionette	INFO	Stopped listening on port 58504
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1637903373809	geckodriver	INFO	Listening on 127.0.0.1:60888
+1637903374111	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilee50i1x"
+1637903374825	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofilee50i1x\\search.json.mozlz4", (void 0)))
+1637903376734	Marionette	INFO	Listening on port 60893
+1637903377247	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637903459260	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cdn.staticfile.org/jquery/2.0.3/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1637903827894	geckodriver	INFO	Listening on 127.0.0.1:61346
+1637903828428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile8nkhZl"
+1637903828688	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile8nkhZl\\search.json.mozlz4", (void 0)))
+1637903830578	Marionette	INFO	Listening on port 61352
+1637903831047	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637903848856	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637903923567	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637903924593	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1637904045639	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.

@@ -13,9 +13,9 @@ requests.packages.urllib3.disable_warnings()
 # 个人中心获取orderno与secret
 from requests.exceptions import ProxyError
 
-orderno = "DT20210723081019C2jYMKsj"
+orderno = "DT20210217143226h373azAb"
 # orderno = "DT20210724165937hjNoKaTV"
-secret = "dd269a72fc9e6accf51e016b4d9ff70a"
+secret = "14e46dee80df5cca4b80b39549a2a7df"
 ip = "dynamic.xiongmaodaili.com"
 # 按量订单端口
 port = "8088"
